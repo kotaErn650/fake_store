@@ -1,0 +1,20 @@
+.down {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  margin-top: 10rem;
+  color: yellow;
+  background-color: black;
+  z-index: 9999;
+  box-shadow: 4px 4px 10px rgba(235, 252, 1, 0.345);
+}
+.down:hover {
+  color: black;
+  font-weight: bold;
+  background-color: yellow;
+  font-size: 2rem;
+  box-shadow: 4px 4px 10px rgb(231, 252, 1);
+  transition: box-shadow 0.9s ease-in-out;
+}

@@ -1,0 +1,9 @@
+<div class="container">
+  <div class="row">
+    @for (user of users; track $index) {
+      <div class="col">
+        <app-card-user [user]="user"></app-card-user>
+      </div>
+    }
+  </div>
+</div>

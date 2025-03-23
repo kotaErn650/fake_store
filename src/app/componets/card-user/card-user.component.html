@@ -1,0 +1,65 @@
+<div class="card shadow" style="max-width: 540px">
+  <div class="card-header bg-primary text-white py-1">
+    <h5 class="card-title mb-1">
+      {{ user?.name?.firstname }} {{ user?.name?.lastname }}
+    </h5>
+    <small class="text-white-50"
+      >ID: {{ user?.id }} | ®{{ user?.username }}</small
+    >
+  </div>
+
+  <div class="card-body p-">
+    
+    <div class="row g-1 mb-2">
+      <div class="col-6">
+        <p class="mb-1"><strong>📧 Email:</strong> {{ user?.email }}</p>
+      </div>
+      <div class="col-6">
+        <p class="mb-1"><strong>📱 Phone:</strong> {{ user?.phone }}</p>
+      </div>
+      <div class="col-12">
+        <p class="mb-1">
+          <strong>🔑 Password:</strong> <code>{{ user?.password }}</code>
+        </p>
+      </div>
+    </div>
+
+    
+    <div class="row g-1 mb-2">
+      <div class="col-8">
+        <p class="mb-1">
+          <strong>🏠 Street:</strong> {{ user?.address?.street }}
+          {{ user?.address?.number }}
+        </p>
+      </div>
+      <div class="col-4">
+        <p class="mb-1">
+          <strong>📮 Zipcode:</strong> {{ user?.address?.zipcode }}
+        </p>
+      </div>
+      <div class="col-15">
+        <p class="mb-1"><strong>🌆 City:</strong> {{ user?.address?.city }}</p>
+      </div>
+    </div>
+
+    
+    <div class="bg-light p-2 rounded">
+      <div class="row g-1">
+        <div class="col-6">
+          <small
+            ><strong>📍 Lat:</strong>
+            {{ user?.address?.geolocation?.lat }}</small
+          >
+        </div>
+        <div class="col-6">
+          <small
+            ><strong>📍 Long:</strong>
+            {{ user?.address?.geolocation?.long }}</small
+          >
+        </div>
+      </div>
+    </div>
+
+    
+  </div>
+</div>
