@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CardUserComponent } from '../../componets/card-user/card-user.component';
-import { UsersService } from '../../services/users.service';
+import { UserService } from '../../services/user.service';
 
 @Component({
   selector: 'app-user',
@@ -10,13 +10,13 @@ import { UsersService } from '../../services/users.service';
 })
 export default class UserComponent {
   users: any = [];
-  usersService = inject(UsersService);
+  userService = inject(UserService);
 
   ngOnInit() {
-    this.getUsers();
+    this.getUser();
   }
 
-  async getUsers() {
-    this.users = await this.usersService.getUsers();
+  async getUser() {
+    this.users = await this.userService.getUser();
   }
 }

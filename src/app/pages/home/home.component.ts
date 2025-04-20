@@ -1,6 +1,6 @@
 import { Component, inject } from '@angular/core';
 import { CardComponent } from '../../componets/card/card.component';
-import { ProductsService } from '../../services/products.service';
+import { ProductsService } from '../../services/product.service';
 
 @Component({
   selector: 'app-home',

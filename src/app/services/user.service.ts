@@ -3,9 +3,9 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class UsersService {
+export class UserService {
   constructor() {}
-  async getUsers() {
+  async getUser() {
     const res = await fetch('https://fakestoreapi.com/users');
     return res.json();
   }
