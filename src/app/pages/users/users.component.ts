@@ -5,8 +5,8 @@ import { UserService } from '../../services/user.service';
 @Component({
   selector: 'app-user',
   imports: [CardUserComponent],
-  templateUrl: './user.component.html',
-  styleUrl: './user.component.css',
+  templateUrl: './users.component.html',
+  styleUrl: './users.component.css',
 })
 export default class UserComponent {
   users: any = [];
